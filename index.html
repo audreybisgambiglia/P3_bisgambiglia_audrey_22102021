@@ -1,30 +1,113 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <title>ohmyfood</title>
+  <!-- DÉBUT HEAD -->
+<head>
+  <title>ohmyfood</title>
+
   <!-- BALISES META -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- FEUILLES CSS -->
-    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
+
   <!-- LINK FONT AWESOME -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" >
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" >
+
   <!-- GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap" rel="stylesheet">
+</head>
+<!-- FIN HEAD -->
 
-    <!-- DEBUT DU BODY -->
-    <body>
-      <h1>ohmyfood</h1>
+<!-- DÉBUT BODY -->
+<body>
+  <!-- DEBUT DU HEADER -->
+  <header>
+    <h1>ohmyfood</h1>
+    <div id="search">
+      <i class="fas fa-map-marker-alt"></i> Paris, Belleville
+    </div>
+    <!-- DÉBUT SECTION EXPLORER -->
+      <div class="content_explorer">
+        <h2>Réservez le menu qui vous convient</h2>
+        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <button class="bouton_explorer">Explorer nos restaurants</button>
+      </div>
+    <!-- FIN SECTION EXPLORER -->
+  </header>
+  <!-- FIN DU HEADER-->
 
+  <!-- DÉBUT DU MAIN -->
+  <main>
 
-    </body>
+    <!-- DÉBUT SECTION LISTE -->
+    <h2>Fonctionnement</h2>
+    <ol>
+      <li><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</li>
+      <li><i class="fas fa-list-ul"></i> Composez votre menu</li>
+      <li><i class="fas fa-store"></i> Dégustez au restaurant</li>
+    </ol>
+    <!-- FIN SECTION LISTE -->
+
+    <!-- DÉBUT SECTION RESTAURANT -->
+    <section class="restaurants">
+      <h2>Restaurants</h2>
+      <article class="first_card">
+        <img src="IMAGES/la_palette_du_gout.jpg" alt="la palette du goût">
+        <div class="new_text">
+          Nouveau
+        </div>
+        <h3>La palette du goût</h3>
+        <p>Ménilmontant</p>
+        <div class="heart_card">
+          <i class="far fa-heart"></i>
+        </div>
+      </article>
+      <article class="first_card">
+        <img src="IMAGES/la_note_enchantee.jpg" alt="la note enchantée">
+        <div class="new_text">Nouveau</div>
+        <h3>La note enchantée</h3>
+        <p>Charonne</p>
+        <div class="heart_card">
+          <i class="far fa-heart"></i>
+        </div>
+      </article>
+      <article class="first_card">
+        <img src="IMAGES/a_la_française.jpg" alt="à la française">
+        <h3>À la française</h3>
+        <p>Cité Rouge</p>
+        <div class="heart_card">
+          <i class="far fa-heart"></i>
+        </div>
+      </article>
+      <article class="first_card">
+        <img src="IMAGES/le_delice_des_sens.jpg" alt="Le délice des sens">
+        <h3>Le délice des sens</h3>
+        <p>Folie-Méricourt</p>
+        <div class="heart_card">
+          <i class="far fa-heart"></i>
+        </div>
+      </article>
+    </section>
+  </main>
+  <!-- FIN DU MAIN -->
+
+  <!-- DÉBUT DU FOOTER -->
+  <footer>
+    <div class="logo">
+      ohmyfood
+    </div>
+
+    <ul>
+      <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+      <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+      <li>Mentions légales</li>
+      <li>Contact</li>
+    </ul>
+  </footer>
+  <!-- FIN DU FOOTER -->
+</body>
+<!-- FIN DU BODY -->
 </html>
