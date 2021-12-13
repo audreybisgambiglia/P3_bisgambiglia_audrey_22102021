@@ -5,12 +5,15 @@ body {
     margin: 0;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 h2 { 
     margin: 0;
     font-size: 35px;
 }
-
-
 
 /* CSS HEADER */
 
@@ -64,6 +67,10 @@ main > h2 {
     margin-bottom: 15px; 
 }
 
+.fonctionnement > h2 { 
+    margin: 25px;
+}
+
 ol {
     list-style: none;
     counter-reset: li;
@@ -74,7 +81,7 @@ ol {
     margin: 0 12.5%;
 }
 
-li::before {
+.fonction_explorer::before {
     content: counter(li); color: #FFF;
     background: #9356DC;    
     border-radius: 100px;
@@ -83,7 +90,7 @@ li::before {
     margin-right: 15px;
 }
 
-li {
+.fonction_explorer {
     counter-increment: li;
     background-color: #F6F6F6; 
     margin-bottom: 30px;
@@ -93,16 +100,123 @@ li {
     box-shadow: 0px 5px 5px #E6E6E6;
     }
 
-li:hover {
+.fonction_explorer:hover {
     background-color: #F5EDFF; 
     box-shadow: 0px 5px 5px #E6E6E6;
     }
 
-li i {
+.fonction_explorer i {
     color: #7E7E7E;
     padding-right: 15px; 
 }
 
-li:hover :nth-child(1) {
+.fonction_explorer:hover :nth-child(1) {
     color: #9356DC;
+}
+
+/* CSS SECTION  */
+
+.restaurants { 
+    display: flex;
+    flex-direction: column;
+    background: #F6F6F6;
+    padding: 25px;
+}
+
+.first_card {
+    position: relative;
+    height: 100%;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px #E1E1E1;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    margin-top: 20px; 
+    box-shadow: 0px 0px 10px #E1E1E1;
+}
+
+.first_card img {
+    height: 70%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.first_card .new_text { 
+    position: absolute;
+    right: 15px;
+    height: 30px;
+    width: 90px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #99E2D0;
+    color: #078C6B;
+    font-weight: bold;
+    border-radius: 2px;
+    font-size: 15px; 
+    box-shadow: 0px 0px 5px grey;
+    margin-top: 15px;
+}
+
+.card_text {
+    height: 30%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 { 
+    font-size: 20px;
+    margin: 0;
+}
+
+.text_content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+p {
+    margin-top: 0;
+}
+
+.far fa-heart { 
+    font-size: 16px;
+}
+
+/* CSS DU FOOTER */
+
+footer { 
+    background-color: #353535;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-family: 'Shrikhand', cursive;
+    font-size: 20px;
+}
+
+footer > ul {
+    list-style-type: none;
+}
+
+footer > ul > li {
+    margin: 5px;
+}
+
+.fa-utensils { 
+    padding-right: 17px;
+}
+
+.fa-hands-helping { 
+    padding-right: 10px;
 }
