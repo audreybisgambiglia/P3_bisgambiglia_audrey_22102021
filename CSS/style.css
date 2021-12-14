@@ -116,11 +116,12 @@ ol {
 
 /* CSS SECTION  */
 
-.restaurants { 
+#restaurants { 
     display: flex;
     flex-direction: column;
     background: #F6F6F6;
     padding: 25px;
+    align-items: center;
 }
 
 .first_card {
@@ -137,7 +138,7 @@ ol {
 }
 
 .first_card img {
-    height: 70%;
+    height: 150px;
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
@@ -185,8 +186,20 @@ p {
     margin-top: 0;
 }
 
-.far fa-heart { 
-    font-size: 16px;
+.fa-heart { 
+    font-size: 20px;
+}
+
+.fa.fa-heart {
+    display: none;
+}
+
+.far.fa-heart:hover + .fa.fa-heart {
+    display: inherit;
+}
+
+.far.fa-heart:hover {
+    display: none;
 }
 
 /* CSS DU FOOTER */
