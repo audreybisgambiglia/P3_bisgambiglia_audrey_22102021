@@ -39,6 +39,7 @@ main {
     max-height: 100%;
     object-fit: cover;
     z-index: 0; 
+    height: 250px;
 }
 
 .menu_top {
@@ -231,4 +232,34 @@ footer > ul > li {
 
 .fa-hands-helping { 
     padding-right: 10px;
+}
+
+/* CSS ANIMATED */
+
+@keyframes pouet {
+    from {
+        transform: translateY(40px)
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes pouet {
+    from {
+        transform: translateY(40px)
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation: pouet 1000ms both;
+    -webkit-animation: pouet 1000ms both;
+    opacity: 0;
 }

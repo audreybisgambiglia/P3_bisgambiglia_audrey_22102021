@@ -24,123 +24,129 @@
 
 <!-- DÉBUT BODY -->
 <body>
-  <!-- DEBUT DU HEADER -->
-  <header>
-    <h1>ohmyfood</h1>
-    <div id="search">
-      <i class="fas fa-map-marker-alt"></i> Paris, Belleville
-    </div>
-    <!-- DÉBUT SECTION EXPLORER -->
-      <div class="content_explorer">
-        <h2>Réservez le menu qui vous convient</h2>
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <a href="#restaurants"><button class="bouton_explorer">Explorer nos restaurants</button></a>
+  <!-- DEBUT DU LOADER -->
+  <div class="loader">
+    <div class="custom-loading-spinner"></div>
+  </div>
+  <!-- FIN DU LOADER -->
+
+    <!-- DEBUT DU HEADER -->
+    <header>
+      <h1>ohmyfood</h1>
+      <div id="search">
+        <i class="fas fa-map-marker-alt"></i> Paris, Belleville
       </div>
-    <!-- FIN SECTION EXPLORER -->
-  </header>
-  <!-- FIN DU HEADER-->
+      <!-- DÉBUT SECTION EXPLORER -->
+        <div class="content_explorer">
+          <h2>Réservez le menu qui vous convient</h2>
+          <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+          <a href="#restaurants"><button class="bouton_explorer">Explorer nos restaurants</button></a>
+        </div>
+      <!-- FIN SECTION EXPLORER -->
+    </header>
+    <!-- FIN DU HEADER-->
 
-  <!-- DÉBUT DU MAIN -->
-  <main>
+    <!-- DÉBUT DU MAIN -->
+    <main>
 
-    <!-- DÉBUT SECTION LISTE -->
-    <section class="fonctionnement">
-      <h2>Fonctionnement</h2>
-      <ol>
-        <li class="fonction_explorer"><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</li>
-        <li class="fonction_explorer"><i class="fas fa-list-ul"></i> Composez votre menu</li>
-        <li class="fonction_explorer"><i class="fas fa-store"></i> Dégustez au restaurant</li>
-      </ol>
-    </section>
-    <!-- FIN SECTION LISTE -->
+      <!-- DÉBUT SECTION LISTE -->
+      <section class="fonctionnement">
+        <h2>Fonctionnement</h2>
+        <ol>
+          <li class="fonction_explorer"><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</li>
+          <li class="fonction_explorer"><i class="fas fa-list-ul"></i> Composez votre menu</li>
+          <li class="fonction_explorer"><i class="fas fa-store"></i> Dégustez au restaurant</li>
+        </ol>
+      </section>
+      <!-- FIN SECTION LISTE -->
 
-    <!-- DÉBUT SECTION RESTAURANT -->
-    <section id="restaurants">
-      <h2>Restaurants</h2>
-      <a href="menu/la_palette_du_gout.html">
-        <article class="first_card">
-          <img src="IMAGES/la_palette_du_gout.jpg" alt="la palette du goût">
-          <div class="new_text">
-            Nouveau
-          </div>
-          <div class="card_text">
-            <div class="text_content">
-              <h3>La palette du goût</h3>
-              <p>Ménilmontant</p>
+      <!-- DÉBUT SECTION RESTAURANT -->
+      <section id="restaurants">
+        <h2>Restaurants</h2>
+        <a href="menu/la_palette_du_gout.html">
+          <article class="first_card">
+            <img src="IMAGES/la_palette_du_gout.jpg" alt="la palette du goût">
+            <div class="new_text">
+              Nouveau
             </div>
-            <div class="heart_card">
-              <i class="far fa-heart"></i>
-              <i class="fa fa-heart"></i>
+            <div class="card_text">
+              <div class="text_content">
+                <h3>La palette du goût</h3>
+                <p>Ménilmontant</p>
+              </div>
+              <div class="heart_card">
+                <i class="far fa-heart"></i>
+                <i class="fa fa-heart"></i>
+              </div>
             </div>
-          </div>
-        </article>
-      </a>
-      <a href="menu/la_note_enchantée.html">
-        <article class="first_card">
-          <img src="IMAGES/la_note_enchantee.jpg" alt="la note enchantée">
-          <div class="new_text">
-            Nouveau
-          </div>
-          <div class="card_text">
-            <div class="text_content">
-              <h3>La note enchantée</h3>
-              <p>Charonne</p>
+          </article>
+        </a>
+        <a href="menu/la_note_enchantée.html">
+          <article class="first_card">
+            <img src="IMAGES/la_note_enchantee.jpg" alt="la note enchantée">
+            <div class="new_text">
+              Nouveau
             </div>
-            <div class="heart_card">
-              <i class="far fa-heart"></i>
-              <i class="fa fa-heart"></i>
+            <div class="card_text">
+              <div class="text_content">
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+              </div>
+              <div class="heart_card">
+                <i class="far fa-heart"></i>
+                <i class="fa fa-heart"></i>
+              </div>
             </div>
-          </div>
-        </article>
-      </a>
-      <a href="menu/a_la_francaise.html">
-        <article class="first_card">
-          <img src="IMAGES/a_la_française.jpg" alt="à la française">
-          <div class="card_text">
-            <div class="text_content">
-              <h3>À la française</h3>
-              <p>Cité Rouge</p>
+          </article>
+        </a>
+        <a href="menu/a_la_francaise.html">
+          <article class="first_card">
+            <img src="IMAGES/a_la_française.jpg" alt="à la française">
+            <div class="card_text">
+              <div class="text_content">
+                <h3>À la française</h3>
+                <p>Cité Rouge</p>
+              </div>
+              <div class="heart_card">
+                <i class="far fa-heart"></i>
+                <i class="fa fa-heart"></i>
+              </div>
             </div>
-            <div class="heart_card">
-              <i class="far fa-heart"></i>
-              <i class="fa fa-heart"></i>
+          </article>
+        </a>
+        <a href="menu/le_delice_des_sens.html">
+          <article class="first_card">
+            <img src="IMAGES/le_delice_des_sens.jpg" alt="Le délice des sens">
+            <div class="card_text">
+              <div class="text_content">
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+              </div>
+              <div class="heart_card">
+                <i class="far fa-heart"></i>
+                <i class="fa fa-heart"></i>
+              </div>
             </div>
-          </div>
-        </article>
-      </a>
-      <a href="menu/le_delice_des_sens.html">
-        <article class="first_card">
-          <img src="IMAGES/le_delice_des_sens.jpg" alt="Le délice des sens">
-          <div class="card_text">
-            <div class="text_content">
-              <h3>Le délice des sens</h3>
-              <p>Folie-Méricourt</p>
-            </div>
-            <div class="heart_card">
-              <i class="far fa-heart"></i>
-              <i class="fa fa-heart"></i>
-            </div>
-          </div>
-        </article>
-      </a>
-    </section>
-  </main>
-  <!-- FIN DU MAIN -->
+          </article>
+        </a>
+      </section>
+    </main>
+    <!-- FIN DU MAIN -->
 
-  <!-- DÉBUT DU FOOTER -->
-  <footer>
-    <div class="logo">
-      ohmyfood
-    </div>
+    <!-- DÉBUT DU FOOTER -->
+    <footer>
+      <div class="logo">
+        ohmyfood
+      </div>
 
-    <ul>
-      <li><a href="#"><i class="fas fa-utensils"></i><b>Proposer un restaurant</b></li></a>
-      <li><a href="#"><i class="fas fa-hands-helping"></i><b>Devenir partenaire</b></li></a>
-      <li><a href="#">Mentions légales</li></a>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </footer>
-  <!-- FIN DU FOOTER -->
+      <ul>
+        <li><a href="#"><i class="fas fa-utensils"></i><b>Proposer un restaurant</b></li></a>
+        <li><a href="#"><i class="fas fa-hands-helping"></i><b>Devenir partenaire</b></li></a>
+        <li><a href="#">Mentions légales</li></a>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </footer>
+    <!-- FIN DU FOOTER -->
 </body>
 <!-- FIN DU BODY -->
 </html>
