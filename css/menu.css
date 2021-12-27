@@ -22,9 +22,12 @@ h1 {
 #back {
     position: absolute;
     left: 20px;
-    top: 25px;
     color: inherit;
     font-size: 20px;
+}
+
+header {
+    position: relative;
 }
 
 /* CSS DU MAIN */
@@ -262,4 +265,11 @@ footer > ul > li {
     animation: pouet 1000ms both;
     -webkit-animation: pouet 1000ms both;
     opacity: 0;
+}
+
+@media screen and (min-width: 1240px) {
+    body {
+        margin: 0 20%;
+    }
+
 }
